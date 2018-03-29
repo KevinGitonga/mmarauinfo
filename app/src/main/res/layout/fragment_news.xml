@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#dedede"
+    tools:context=".fragments.NewsFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frameLayout">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/news_fragment_recycler"
+                android:layout_centerInParent="true"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:visibility="visible"
+                android:scaleX="0.10"
+                android:scaleY="0.10"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

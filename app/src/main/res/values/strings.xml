@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Mmarau Mobile Info</string>
+    <string name="drawer_open">Mmarau Mobile</string>
+    <string name="drawer_closed">Mmarau Mobile</string>
+    <string name="read_the_full_article">read the full article</string>
+    <string name="collasping_image">collapsing_image</string>
+    <string name="title_activity_inquiries">InquiriesActivity</string>
+    <string name="error_short_value">Error!! very short text</string>
+    <string name="about_us_detail">-Mmarau Mobile Info is a Mobile Application for the Android platform that seeks to provide realtime Informatio
+        n About major Notices, Events and news in and around the Campus.\n\n-The Data is aggregated from different sources from within the
+         Campus, Currently the Information source for the application will be data from Varios Admins with access to the Backend
+        and can manually add information about notices, events and news.\n\n-The App will also Enable realtime reply to Inquiries through
+    the Create inquiry module in the App that Enables individuals to Inquire.\n\n-The inquiries will be taken to concerned parties and replied
+    in the dashboard backend so that the feedback will be shown directly to the App.</string>
+    <string name="copyright">Copyright: 2018 Ipandasoft Inc</string>
+    <string name="like_us">-Please rate our app on play store we could also please use your good review so drop it on our playstore page.</string>
+    <string name="privacy">READ OUR PRIVACY POLICY</string>
+    <string name="more_apps">SEE OUR OTHER APPS</string>
+    <string name="about_us_title">About App</string>
+    <string name="title_activity_atribs">Open Source Libraries</string>
+    <string name="tv_libraries_used">Libraries Used</string>
+    <string name="retrofit">Retrofit</string>
+    <string name="retrofit_author">Square</string>
+    <string name="gson">Gson</string>
+    <string name="gson_author">Google</string>
+    <string name="picasso">Picasso</string>
+    <string name="picasso_author">Jake Wharton</string>
+    <string name="okhttp">OKHttp</string>
+    <string name="okhttp_author">Square</string>
+    <string name="tv_libraries_data">The following Open source Libraries have been used in developing the Data and Presentation Logic of the Application, without them it would be a pretty complex task.</string>
+    <string name="version">os_version</string>
+    <string name="title_activity_single_info">SingleInfo</string>
+    <string name="title_activity_notice_details">NoticeDetails</string>
+    <string name="title_activity_notice_image">NoticeImageActivity</string>
+    <string name="logout_title">Logout</string>
+    <string name="logout_message">Are you sure you want to logout!!</string>
+    <string name="okay">Yes</string>
+    <string name="no">No</string>
+    <string name="lovely">LovelyDialog</string>
+    <string name="lovely_author">Yarolegovich</string>
+    <string name="html_author">Dominik Schürmann</string>
+    <string name="html_parser">HtmlTextView</string>
+    <string name="pref_title_ringtone">ringtone</string>
+</resources>

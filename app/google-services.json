@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "691167781199",
+    "firebase_url": "https://mmarau-info.firebaseio.com",
+    "project_id": "mmarau-info",
+    "storage_bucket": "mmarau-info.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691167781199:android:042aa64f33aeddad",
+        "android_client_info": {
+          "package_name": "ke.co.ipandasoft.mmaraumobileinfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691167781199-abmvkr6f22r4uenq08rh90tlcrtvtvf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSiGIY_JuBsQg8Qer-j0_HBLxWtRpFqSg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

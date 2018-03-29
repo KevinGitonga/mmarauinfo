@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateInquiry">
+
+    <include layout="@layout/toolbar" android:id="@+id/toolbar"></include>
+
+    <ImageView
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/toolbar"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorPrimary"
+        android:id="@+id/imageView"
+        android:tint="@color/white"
+        android:src="@drawable/ic_mail"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        />
+    <LinearLayout
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/imageView">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inquiry_subject_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/inquiry_subject"
+                android:lines="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="Inquiry Subject" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/main_inquiry_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:gravity="top"
+                android:lines="6"
+                android:id="@+id/main_inquiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="Inquiry Text" />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:text="Send Inquiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/send_inquiry_button"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:padding="0dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:elevation="0dp" />
+    </LinearLayout>
+</RelativeLayout>
