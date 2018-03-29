@@ -9,7 +9,7 @@ be commited to my GITHUB Account at a later time.
     <td><img src="https://github.com/KevinGitonga/mmarauinfo/blob/master/screens/splash.png"></td>
     <td><img src="https://github.com/KevinGitonga/mmarauinfo/blob/master/screens/register.png"></td>
     <td><img src="https://github.com/KevinGitonga/mmarauinfo/blob/master/screens/login.png"></td>
-    <td><img src="https://github.com/KevinGitonga/mmarauinfo/blob/master/screens/dashboard.png"></td>
+    <td><img src="https://github.com/KevinGitonga/mmarauinfo/blob/master/screens/dashboard.png"></td><br>
     <td><img src="https://github.com/KevinGitonga/mmarauinfo/blob/master/screens/events.png"></td>
     <td><img src="https://github.com/KevinGitonga/mmarauinfo/blob/master/screens/notices.png"></td>
     <td><img src="https://github.com/KevinGitonga/mmarauinfo/blob/master/screens/news.png"></td>
