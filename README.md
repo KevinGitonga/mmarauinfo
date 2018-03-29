@@ -3,13 +3,13 @@
 This Android App project was undertaken as my Final Year project in Campus, it was executed in two months together with the server side, that will
 be commited to my GITHUB Account at a later time.
 
-##Screenshots
+##APP UI/UX Screenshots
 <table>
   <tr>
-    <td><img src="https://github.com/KevinGitonga/mmarauinfo/blob/master/screens/events.png"></td>
-    <td><img src="https://github.com/KevinGitonga/mmarauinfo/blob/master/screens/notices.png"></td>
-    <td><img src="https://github.com/KevinGitonga/mmarauinfo/blob/master/screens/news.png"></td>
-    <td><img src="https://github.com/KevinGitonga/mmarauinfo/blob/master/screens/inquiries.png"></td>
+    <td><img src="https://github.com/KevinGitonga/mmarauinfo/blob/master/screens/splash.png"></td>
+    <td><img src="https://github.com/KevinGitonga/mmarauinfo/blob/master/screens/register.png"></td>
+    <td><img src="https://github.com/KevinGitonga/mmarauinfo/blob/master/screens/login.png"></td>
+    <td><img src="https://github.com/KevinGitonga/mmarauinfo/blob/master/screens/dashboard.png"></td>
   </tr>
 </table><br/>
 <table>
