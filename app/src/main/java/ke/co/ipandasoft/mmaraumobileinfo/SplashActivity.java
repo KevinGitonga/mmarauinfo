@@ -2,9 +2,13 @@ package ke.co.ipandasoft.mmaraumobileinfo;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
+
+import com.google.firebase.iid.FirebaseInstanceId;
 
 import ke.co.ipandasoft.mmaraumobileinfo.config.Config;
 import ke.co.ipandasoft.mmaraumobileinfo.config.Utils;
@@ -19,6 +23,14 @@ import retrofit.client.Response;
 public class SplashActivity extends AppCompatActivity {
 
     private SharedPrefs sharedPrefs;
+    Handler handler = new Handler();
+    Runnable runnable = new Runnable() {
+        @Override
+        public void run() {
+            ObtainFcmReg();
+        }
+    };
+    private RestInterface finalRestInterface;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,9 +44,20 @@ public class SplashActivity extends AppCompatActivity {
         }else if(!IsFirstRun() && DataNotAvailable() && Utils.IsNeton(this)){
             InitLogin();
         }else if(!IsFirstRun() && !DataNotAvailable() && Utils.IsNeton(this)){
+            ObtainFcmReg();
             InitMain();
         }else {
             Utils.MakeToast(this);
+        }
+    }
+
+    private void ObtainFcmReg() {
+        String token = FirebaseInstanceId.getInstance().getToken();
+        if (TextUtils.isEmpty(token)) {
+            handler.removeCallbacks(runnable);
+            handler.postDelayed(runnable, 10 * 1000);
+        } else {
+            sendRegistrationToServer(token);
         }
     }
 
@@ -103,5 +126,26 @@ public class SplashActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 }, 1500);
+    }
+
+    private void sendRegistrationToServer(String token) {
+        Log.e("fcm_id_from_firebase", "fcmRegIdxxx: " + token.toString());
+        sharedPrefs.setGCMRegId(token);
+        String userEmail=sharedPrefs.getUserEmail();
+        RestAdapter adapter = new RestAdapter.Builder().setEndpoint(Config.REST_ROOT).build();
+        finalRestInterface = adapter.create(RestInterface.class);
+        finalRestInterface.RegisterFcm(userEmail,token, new Callback<FcmCallback>() {
+            @Override
+            public void success(FcmCallback fcmCallback, Response response) {
+                Log.e("success_fcm","successful_fcm");
+                Log.e("fcm_data_reply",fcmCallback.getResponse().toString());
+            }
+
+            @Override
+            public void failure(RetrofitError error) {
+                Log.e("failed_fcm",error.getMessage());
+
+            }
+        });
     }
 }
